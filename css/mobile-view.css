@@ -1,0 +1,264 @@
+@media all and (max-width: 700px) {
+  nav {
+    height: 100px;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 10;
+    background-color: #131517;
+  }
+
+  
+
+  .mini-mobile-nav {
+    padding: 0px 10px 15px 10px;
+  }
+
+  .main-logo {
+    width: 80px;
+    position: relative;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.6s;
+  }
+
+  .main-logo:hover {
+    transform: rotate(360deg);
+  }
+
+  #nav-links {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    transition: all 3s ease-in-out;
+    margin-top: -100%;
+    background-color: #131517;
+    z-index: 5 !important;
+  }
+
+  #nav-links > ul {
+    list-style: none;
+  }
+
+  li > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    line-height: 20px;
+    padding: 15px 0 15px 0;
+  }
+
+  .download-cv-btn {
+    color: #131517;
+    display: flex;
+    justify-content: right;
+    background-color: #131517;
+    transition: all 3s ease-in-out;
+    padding-bottom: 20px;
+  }
+
+  .download-cv > i {
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .download-cv-btn > * {
+    background-color: #fdde6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #131517 !important;
+    text-decoration: none;
+  }
+
+  #toogle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  #toogle::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+
+  #toogle::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: #ffffff;
+    transform: translateY(5px);
+    transition: 1s;
+  }
+
+  #toogle.active::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  #toogle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  #nav-links.active {
+    transition: all 1.7s ease-in;
+    margin-top: 0 !important;
+  }
+
+  .css-typewriting-container .static-text {
+    font-size: 30px;
+    color: #e1e1e1;
+  }
+
+  .css-typewriting-container .dynamic-text {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .dynamic-text li {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fdde6d;
+  }
+
+  .dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 35px;
+    width: 100%;
+    background: #131517;
+    border-left: 2px solid #fdde6d;
+  
+  }
+
+  .css-typewriting-container-2 .static-text-2 {
+    font-weight: 200;
+    font-size: 20px;
+    color: #e1e1e1;
+  }
+
+  .css-typewriting-container-2 .dynamic-text-2 {
+    margin-left: 5px;
+    height: 23px;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+  }
+
+  .dynamic-text-2 li {
+    list-style: none;
+    color: #fdde6d;
+    position: relative;
+    top: 0;
+    
+  }
+
+  .about-me {
+    margin-top: 90px !important;
+  }
+
+  .about-me-content > p {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .rolling-words-container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 13%;
+    grid-gap: 30px;
+  }
+
+  .projects-section > p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .a-project-card {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .projects-section > p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .contact-me > div {
+    font-size: 30px !important;
+  }
+
+  @keyframes slide-2 {
+    100% {
+      top: -70px;
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .my-mobile-image-container {
+    display: block !important;
+    margin: 30px auto 0 auto;
+  }
+
+  .my-image-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .my-image-background {
+    display: none;
+  }
+
+  .my-mobile-image-container > div > img {
+    width: 100%;
+  }
+
+  .about-project {
+    height: fit-content !important;
+  }
+
+  .project-content > p {
+    height: fit-content !important;
+  }
+
+  
+}
