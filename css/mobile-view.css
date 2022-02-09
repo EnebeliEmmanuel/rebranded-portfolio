@@ -7,53 +7,7 @@
     z-index: 10;
     background-color: #131517;
   }
-  /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
- prefers-reduced-motion {
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-  @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-      scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-}
-
-/* 
-  By default, we'll use the REDUCED MOTION version of the animation.
-*/
-@keyframes modal-enter {
-  from {
-    opacity: 0 ;
-  }
-  to {
-    opacity: 1 ;
-  }
-}
-
-/*
-  Then, if the user has NO PREFERENCE for motion, we can OVERRIDE the
-  animation definition to include both the motion and non-motion properties.
-*/
-@media ( prefers-reduced-motion: no-preference ) {
-  @keyframes modal-enter {
-    from {
-      opacity: 0 ;
-      transform: scale(0.7) ;
-    }
-    to {
-      opacity: 1 ;
-      transform: scale(1.0) ;
-    }
-  }
-}
+ 
     
 .resume {
   width: 960px;
