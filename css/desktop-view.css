@@ -248,6 +248,10 @@
     text-align: center;
   }
 
+  .adjust {
+    margin-right: 2rem;
+  }
+
   .interests>h3, .interests-items {
     display: grid;
   flex-direction: column;
