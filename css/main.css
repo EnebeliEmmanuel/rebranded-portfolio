@@ -59,6 +59,7 @@ body {
         padding: 1.5em 1em 2em;
           font-family: "Inter";
           text-align: center;
+          min-width: 3em;
 }
 
 .added {
