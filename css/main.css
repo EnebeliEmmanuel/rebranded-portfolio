@@ -202,7 +202,7 @@ li > a:hover {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  
+  margin-right: 3rem;
   white-space: nowrap;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.3);
@@ -231,14 +231,17 @@ li > a:hover {
 }
 
 .project-image {
-  width: 100%;
-  background-size: cover;
+   width: 100%;
+object-fit: cover;
   object-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  
 }
 
 .project-content {
   background: #0d0d0d;
-  padding: 32px;
+  padding: 22px;
   border-radius: 0px 0px 10px 10px;
 }
 
