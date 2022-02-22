@@ -7,8 +7,35 @@
     z-index: 10;
     background-color: #131517;
   }
- 
-  
+    
+.lf  p{
+ color: var(--slightlyTransparentWhiteMain);
+     font-size: 1em;
+       line-height: 1.5em;
+        padding: 1.5em 1em 2em;
+          font-family: "Inter";
+          text-align: center;
+}
+
+.added {
+     font-size: 3em;
+       line-height: 1.5em;
+        padding: 1.5em 1em 2em;
+          font-family: "Inter";
+          text-align: center;
+           color: var(--slightlyTransparentWhiteMain);
+           position: relative;
+           top: 2em;
+}
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #fdde6d;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
 
 
   
@@ -24,12 +51,10 @@
     transition-duration: 1s;
     transition-timing-function: linear;
     transition-delay: 0.6s;
-  
   }
 
   .main-logo:hover {
     transform: rotate(360deg);
-    
   }
 
   #nav-links {
@@ -237,80 +262,18 @@
   .my-image-container {
     display: none;
   }
-    
-
-/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
-prefers-reduced-motion {
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-  @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-      scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-}
-
-/* 
-  By default, we'll use the REDUCED MOTION version of the animation.
-*/
-@keyframes modal-enter {
-  from {
-    opacity: 0 ;
-  }
-  to {
-    opacity: 1 ;
-  }
-}
-
-/*
-  Then, if the user has NO PREFERENCE for motion, we can OVERRIDE the
-  animation definition to include both the motion and non-motion properties.
-*/
-@media ( prefers-reduced-motion: no-preference ) {
-  @keyframes modal-enter {
-    from {
-      opacity: 0 ;
-      transform: scale(0.7) ;
-    }
-    to {
-      opacity: 1 ;
-      transform: scale(1.0) ;
-    }
-  }
-}
-  
-}
-
-@media screen and (max-width: 355px) {
-  .my-image-background {
-    display: none;
-  }
-
-  .my-mobile-image-container > div > img {
-    width: 100%;
-  }
-
-  .about-project {
-    height: fit-content !important;
-  }
-
-  .project-content > p {
-    height: fit-content !important;
-  }
-   
  
   
   
+  
+
+
+}
+
+
+
 /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
-prefers-reduced-motion {
+ prefers-reduced-motion {
   /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
   @media (prefers-reduced-motion: reduce) {
     html:focus-within {
@@ -327,38 +290,4 @@ prefers-reduced-motion {
     }
   }
 }
-
-/* 
-  By default, we'll use the REDUCED MOTION version of the animation.
-*/
-@keyframes modal-enter {
-  from {
-    opacity: 0 ;
-  }
-  to {
-    opacity: 1 ;
-  }
-}
-
-/*
-  Then, if the user has NO PREFERENCE for motion, we can OVERRIDE the
-  animation definition to include both the motion and non-motion properties.
-*/
-@media ( prefers-reduced-motion: no-preference ) {
-  @keyframes modal-enter {
-    from {
-      opacity: 0 ;
-      transform: scale(0.7) ;
-    }
-    to {
-      opacity: 1 ;
-      transform: scale(1.0) ;
-    }
-  }
-}
-
-}
-
-
-
 
