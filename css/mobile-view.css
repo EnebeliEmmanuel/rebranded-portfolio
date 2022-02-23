@@ -198,6 +198,9 @@
 
   .about-me {
     margin-top: 90px !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-me-content > p {
@@ -205,13 +208,9 @@
     font-size: 16px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.7);
+    text-align: center;
   }
 
-  .rolling-words-container {
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
-  }
 
   .project-grid {
     display: grid;
