@@ -111,9 +111,14 @@ color: var(--slightlyTransparentWhiteMain);
   background-color: #fdde6d;
   width: 220px;
   height: 220px;
-  position: absolute;
+ 
   border-radius: 100%;
-  margin-left: 26px;
+  margin-left: 20px;
+  background-image: url(../images/code.png);
+
+  object-position: center;
+  background-size: cover;
+  
 }
 
 .my-image {
