@@ -221,8 +221,9 @@ prefers-reduced-motion {
   }
    
 
-  
-  
+
+
+
   
 
 
@@ -233,7 +234,7 @@ prefers-reduced-motion {
 }
 
 
-@media all and (min-width: 475px) {
+@media all and (min-width: 395px) {
 
   div.stacks-animation {
     display: grid;
@@ -258,5 +259,15 @@ prefers-reduced-motion {
 
 
 
+
+}
+
+@media all and (min-width: 420px) {
+
+  div.stacks-animation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    text-align: center;
+  }
 
 }
