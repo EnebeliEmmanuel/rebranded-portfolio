@@ -31,7 +31,7 @@ contract KokoNFT is ERC721, Ownable {
 
 
 
-pause bind century leopard obscure poem grocery powder knife myself adult double
+
 
 
 
